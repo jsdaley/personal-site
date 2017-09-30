@@ -23,8 +23,8 @@ class App extends React.Component {
         <SiteContent />
         <Footer />
       </SiteContainer>
-    )
+    );
   }
-};
+}
 
 render(<App/>, document.getElementById('react-root'));

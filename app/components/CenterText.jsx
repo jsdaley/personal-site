@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Column} from './Box';
 import styled from 'emotion/react';
 import Blurb from './Blurb';
