@@ -13,18 +13,12 @@ const ContentContainer = styled(Column)`
   }
 `;
 
-class SiteContent extends Component {
-  constructor(props, context) {
-    super(props);
-  }
-
-  render() {
-    return (
-      <ContentContainer grow>
-        <CenterText />
-      </ContentContainer>
-    );
-  }
-}
+const SiteContent = (props) => {
+  return (
+    <ContentContainer grow>
+      <CenterText />
+    </ContentContainer>
+  );
+};
 
 export default SiteContent;

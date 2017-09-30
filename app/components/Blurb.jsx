@@ -26,31 +26,24 @@ const TextContainer = styled.div`
     border: 0;
     padding: 0;
   }
-`
+`;
 
 const Text = styled.div`
   @media(max-width: 700px) {
     margin-bottom: 20px;
   }
-`
+`;
 
-
-class Blurb extends Component {
-  constructor(props, context) {
-    super(props);
-  }
-
-  render() {
-    return (
-      <ContentContainer {...this.props}>
-        <TextContainer>
-          <Text>Located in Vancouver, BC</Text>
-          <Text>Specializes in Full-Stack Web Development</Text>
-          <Text>Loves Angular, React and Node.js</Text>
-        </TextContainer>
-      </ContentContainer>
-    );
-  }
-}
+const Blurb = (props) => {
+  return (
+    <ContentContainer {...props}>
+      <TextContainer>
+        <Text>Located in Vancouver, BC</Text>
+        <Text>Specializes in Full-Stack Web Development</Text>
+        <Text>Loves Angular, React and Node.js</Text>
+      </TextContainer>
+    </ContentContainer>
+  );
+};
 
 export default Blurb;

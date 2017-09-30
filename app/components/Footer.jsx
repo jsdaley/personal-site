@@ -30,28 +30,22 @@ const LeftContainer = styled(Row)`
   }
 `;
 
-class Footer extends Component {
-  constructor(props, context) {
-    super(props);
-  }
+const Footer = (props) => {
+  return (
+    <FooterContainer justify="space-between">
+      <LeftContainer>
+        <Link href="https://battlefy.com">Where I Work</Link>
+        <Link href="mailto:contact@jareddaley.com">Contact Me</Link>
+      </LeftContainer>
 
-  render() {
-    return (
-      <FooterContainer justify="space-between">
-        <LeftContainer>
-          <Link href="https://battlefy.com">Where I Work</Link>
-          <Link href="mailto:contact@jareddaley.com">Contact Me</Link>
-        </LeftContainer>
-
-        <Row>
-          <Link href="https://www.linkedin.com/in/jared-daley-04558763/"><i className="fa fa-linkedin" aria-hidden="true"></i></Link>
-          <Link href="https://github.com/jsdaley"><i className="fa fa-github" aria-hidden="true"></i></Link>
-          <Link href="https://twitter.com/jsdaley"><i className="fa fa-twitter" aria-hidden="true"></i></Link>
-          <Link href="https://www.instagram.com/jsdaley/"><i className="fa fa-instagram" aria-hidden="true"></i></Link>
-        </Row>
-      </FooterContainer>
-    );
-  }
-}
+      <Row>
+        <Link href="https://www.linkedin.com/in/jared-daley-04558763/"><i className="fa fa-linkedin" aria-hidden="true"></i></Link>
+        <Link href="https://github.com/jsdaley"><i className="fa fa-github" aria-hidden="true"></i></Link>
+        <Link href="https://twitter.com/jsdaley"><i className="fa fa-twitter" aria-hidden="true"></i></Link>
+        <Link href="https://www.instagram.com/jsdaley/"><i className="fa fa-instagram" aria-hidden="true"></i></Link>
+      </Row>
+    </FooterContainer>
+  );
+};
 
 export default Footer;

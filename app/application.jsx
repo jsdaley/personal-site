@@ -25,6 +25,6 @@ class App extends React.Component {
       </SiteContainer>
     )
   }
-}
+};
 
 render(<App/>, document.getElementById('react-root'));

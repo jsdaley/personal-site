@@ -37,23 +37,17 @@ const StyledBlurb = styled(Blurb)`
   @media(max-width: 700px) {
     margin-top: 100px;
   }
-`
+`;
 
-class CenterText extends Component {
-  constructor(props, context) {
-    super(props);
-  }
-
-  render() {
-    return (
-      <ContentContainer>
-        <Name>Jared Daley</Name>
-        <Occupation>Senior Software Engineer</Occupation>
-        <Role>& Project Manager</Role>
-        <StyledBlurb />
-      </ContentContainer>
-    );
-  }
-}
+const CenterText = () => {
+  return (
+    <ContentContainer>
+      <Name>Jared Daley</Name>
+      <Occupation>Senior Software Engineer</Occupation>
+      <Role>& Project Manager</Role>
+      <StyledBlurb />
+    </ContentContainer>
+  );
+};
 
 export default CenterText;
