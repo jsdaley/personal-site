@@ -1,29 +1,41 @@
 {
-  "name": "jardal",
-  "version": "0.0.0",
-  "description": "",
-  "main": "lib/server.js",
+  "name": "personal-site",
+  "version": "1.0.0",
+  "description": "Jared Daley's Personal Site",
+  "main": "index.js",
   "scripts": {
-    "start": "npm run build & node .",
-    "watch": "npm start & watchify -d -v -t hbsfy app/app.js -o public/app.js",
-    "build": "browserify -t hbsfy app/app.js > public/app.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server",
+    "build": "webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsdaley/personal-site.git"
   },
   "author": "",
-  "license": "BSD-2-Clause",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsdaley/personal-site/issues"
+  },
+  "homepage": "https://github.com/jsdaley/personal-site#readme",
   "dependencies": {
-    "backbone": "~1.1.2",
-    "backbone-sorted-collection": "~0.3.7",
-    "backbone.marionette": "~1.6.4",
-    "browserify": "^14.4.0",
-    "connect": "^3.6.3",
-    "ecstatic": "^2.2.1",
-    "handlebars": "^4.0.10",
-    "hbsfy": "^2.7.0",
-    "jquery": "^3.2.1",
-    "moment": "^2.18.1",
-    "underscore": "^1.8.3"
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-emotion": "^7.3.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "copy-webpack-plugin": "^4.1.0",
+    "emotion": "^7.3.2",
+    "html-webpack-plugin": "^2.30.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-emotion": "^7.3.2",
+    "webpack": "^3.6.0"
   },
   "devDependencies": {
-    "watchify": "^3.9.0"
+    "babel-eslint": "^8.0.1",
+    "eslint": "^4.8.0",
+    "eslint-plugin-react": "^7.4.0",
+    "webpack-dev-server": "^2.9.1"
   }
 }
