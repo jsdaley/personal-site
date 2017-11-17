@@ -17,7 +17,8 @@ const plugins = [
     }
   }),
   new CopyWebpackPlugin([
-    { from: 'app/favicon.ico' }
+    { from: 'app/favicon.ico' },
+    { from: 'app/jared_daley_resume.pdf' }
   ])
 ];
 

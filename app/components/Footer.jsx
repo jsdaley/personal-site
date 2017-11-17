@@ -35,7 +35,8 @@ const Footer = (props) => {
     <FooterContainer justify="space-between">
       <LeftContainer>
         <Link href="https://battlefy.com">Where I Work</Link>
-        <Link href="mailto:contact@jareddaley.com">Contact Me</Link>
+        <Link href="/jared_daley_resume.pdf">Resume</Link>
+        <Link href="mailto:work@jareddaley.com">Contact Me</Link>
       </LeftContainer>
 
       <Row>
