@@ -40,7 +40,7 @@ const Footer = (props) => {
       </LeftContainer>
 
       <Row>
-        <Link href="https://www.linkedin.com/in/jared-daley-04558763/"><i className="fa fa-linkedin" aria-hidden="true"></i></Link>
+        <Link href="https://www.linkedin.com/in/jared-daley/"><i className="fa fa-linkedin" aria-hidden="true"></i></Link>
         <Link href="https://github.com/jsdaley"><i className="fa fa-github" aria-hidden="true"></i></Link>
         <Link href="https://twitter.com/jsdaley"><i className="fa fa-twitter" aria-hidden="true"></i></Link>
         <Link href="https://www.instagram.com/jsdaley/"><i className="fa fa-instagram" aria-hidden="true"></i></Link>
