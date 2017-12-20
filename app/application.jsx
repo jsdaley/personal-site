@@ -15,7 +15,6 @@ const SiteContainer = styled(Column)`
   right: 0;
 `;
 
-
 class App extends React.Component {
   render () {
     return (

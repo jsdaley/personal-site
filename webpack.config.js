@@ -3,7 +3,6 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-
 const BUILD_DIR = path.resolve(__dirname, 'public');
 const APP_DIR = path.resolve(__dirname, 'app');
 const PRODUCTION = process.env.NODE_ENV === 'production';
@@ -34,7 +33,7 @@ if (PRODUCTION) {
 }
 
 const config = {
-  entry: APP_DIR + '/application.jsx',
+  entry: `${APP_DIR}/application.jsx`,
   output: {
     path: BUILD_DIR,
     filename: 'bundle.js'
