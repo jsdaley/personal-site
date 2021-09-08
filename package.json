@@ -13,7 +13,7 @@
     "url": "git+https://github.com/jsdaley/personal-site.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "Unlicensed",
   "bugs": {
     "url": "https://github.com/jsdaley/personal-site/issues"
   },
@@ -23,9 +23,6 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-emotion": "^7.3.2",
-    "yargs": "^17.1.1"
-  },
-  "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.4",
     "@babel/preset-react": "^7.14.5",
