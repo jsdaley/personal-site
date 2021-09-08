@@ -1,4 +1,3 @@
-const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -15,38 +14,42 @@ const plugins = [
       collapseWhitespace: true
     }
   }),
-  new CopyWebpackPlugin([
-    { from: 'app/favicon.ico' },
-    { from: 'app/jared_daley_resume.pdf' }
-  ])
+  new CopyWebpackPlugin(  {
+    patterns: [
+      { from: 'app/favicon.ico' },
+      { from: 'app/jared_daley_resume.pdf' },
+    ],
+  })
 ];
-
-if (PRODUCTION) {
-  plugins.push(new webpack.optimize.UglifyJsPlugin({
-    compress: true,
-    mangle: false,
-    beautify: false,
-    output: {
-      comments: false
-    }
-  }));
-}
 
 const config = {
   entry: `${APP_DIR}/application.jsx`,
+  mode: PRODUCTION ? 'production' : 'development',
   output: {
     path: BUILD_DIR,
     filename: 'bundle.js'
   },
+  optimization: {
+    minimize: PRODUCTION,
+  },
+  devtool: 'source-map',
+  devServer: {
+    static: {
+      directory: BUILD_DIR,
+    },
+    compress: true,
+    hot: true,
+    port: 9000,
+  },
   resolve: {
     extensions: ['.js', '.jsx']
   },
-  module : {
-    loaders : [
+  module: {
+    rules: [
       {
-        test : /\.jsx?/,
-        include : APP_DIR,
-        loader : 'babel-loader'
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: ['babel-loader']
       }
     ]
   },

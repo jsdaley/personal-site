@@ -1,11 +1,11 @@
 import React from 'react';
 import {Column} from './Box';
-import styled from 'emotion/react';
+import styled from '@emotion/styled';
 
 const ContentContainer = styled(Column)`
   width: 100%;
   border-top: 2px solid white;
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Share Tech Mono', monospace;
   text-align: right;
 
@@ -19,7 +19,7 @@ const TextContainer = styled.div`
   width: 100%;
   padding-right: 20px;
   padding-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 25px;
   border-right: 5px solid white;
 
   @media(max-width: 700px) {
@@ -38,9 +38,9 @@ const Blurb = (props) => {
   return (
     <ContentContainer {...props}>
       <TextContainer>
-        <Text>Located in Vancouver, BC</Text>
-        <Text>Specializes in Full-Stack Web Development</Text>
-        <Text>Loves Angular, React and Node.js</Text>
+        <Text>Located in Vancouver, BC, Canada</Text>
+        <Text>Specializes in DevOps, Full-Stack Web Development and Security</Text>
+        <Text>Loves Typescript, AWS, Terraform, Go and React </Text>
       </TextContainer>
     </ContentContainer>
   );

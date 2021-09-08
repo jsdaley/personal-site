@@ -1,7 +1,7 @@
 import React from 'react';
 import {render} from 'react-dom';
-import styled from 'emotion/react';
-import {Column} from './components/Box';
+import styled from '@emotion/styled';
+import { Column } from './components/Box';
 import SiteContent from './components/SiteContent';
 import Footer from './components/Footer';
 
