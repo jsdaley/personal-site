@@ -39,8 +39,8 @@ const Blurb = (props) => {
     <ContentContainer {...props}>
       <TextContainer>
         <Text>Located in Vancouver, BC, Canada</Text>
-        <Text>Specializes in DevOps, Full-Stack Web Development and Security</Text>
-        <Text>Loves Typescript, AWS, Terraform, Go and React </Text>
+        <Text>DevOps, Back-end Development, Security, System Architecture</Text>
+        <Text>Loves Typescript, AWS, Terraform, and Go</Text>
       </TextContainer>
     </ContentContainer>
   );
