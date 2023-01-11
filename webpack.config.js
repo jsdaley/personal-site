@@ -17,7 +17,6 @@ const plugins = [
   new CopyWebpackPlugin(  {
     patterns: [
       { from: 'app/favicon.ico' },
-      { from: 'app/jared_daley_resume.pdf' },
     ],
   })
 ];
