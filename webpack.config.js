@@ -4,7 +4,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const BUILD_DIR = path.resolve(__dirname, 'public');
 const APP_DIR = path.resolve(__dirname, 'app');
-const PRODUCTION = process.env.NODE_ENV === 'production';
+const PRODUCTION = process.env.BUILD_MODE === 'production';
 
 const plugins = [
   new HtmlWebpackPlugin({
