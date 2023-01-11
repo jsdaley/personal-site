@@ -4,7 +4,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const BUILD_DIR = path.resolve(__dirname, 'public');
 const APP_DIR = path.resolve(__dirname, 'app');
-const PRODUCTION = process.env.NODE_ENV === 'production';
+const PRODUCTION = process.env.BUILD_MODE === 'production';
 
 const plugins = [
   new HtmlWebpackPlugin({
@@ -49,7 +49,12 @@ const config = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: ['babel-loader']
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env', '@babel/preset-react']
+          }
+        }
       }
     ]
   },

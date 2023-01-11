@@ -53,7 +53,7 @@ const CenterText = () => {
     <ContentContainer>
       <Name>Jared Daley</Name>
       <Occupation>Senior Software Engineer</Occupation>
-      <FirstRole>DevOps Team Lead</FirstRole>
+      <FirstRole>Engineering Manager and DevOps Team Lead</FirstRole>
       <SecondRole>SOC 2 Compliance Officer</SecondRole>
       <StyledBlurb />
     </ContentContainer>
