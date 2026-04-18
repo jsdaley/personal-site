@@ -43,8 +43,8 @@ const Blurb = () => (
   <ContentContainer>
     <TextContainer>
       <Text>Located in Vancouver, BC, Canada</Text>
-      <Text>DevOps, Back-end Development, Security, System Architecture</Text>
-      <Text>Loves Typescript, AWS, Terraform, and Go</Text>
+      <Text>Information and Cyber Security, Policy, and System Architecture</Text>
+      <Text>Exploring AI Governance and Responsible AI</Text>
     </TextContainer>
   </ContentContainer>
 );
