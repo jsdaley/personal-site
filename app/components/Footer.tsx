@@ -42,9 +42,9 @@ const Footer = () => (
       <Link href="mailto:work@jareddaley.com">Contact Me</Link>
     </LeftContainer>
     <Row>
-      <Link href="https://www.linkedin.com/in/jared-daley/"><i className="fa fa-linkedin" aria-hidden="true"></i></Link>
-      <Link href="https://github.com/jsdaley"><i className="fa fa-github" aria-hidden="true"></i></Link>
-      <Link href="https://www.instagram.com/jsdaley/"><i className="fa fa-instagram" aria-hidden="true"></i></Link>
+      <Link href="https://www.linkedin.com/in/jared-daley/" aria-label="LinkedIn"><i className="fa fa-linkedin" aria-hidden="true"></i></Link>
+      <Link href="https://github.com/jsdaley" aria-label="GitHub"><i className="fa fa-github" aria-hidden="true"></i></Link>
+      <Link href="https://www.instagram.com/jsdaley/" aria-label="Instagram"><i className="fa fa-instagram" aria-hidden="true"></i></Link>
     </Row>
   </FooterContainer>
 );

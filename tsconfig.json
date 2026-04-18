@@ -12,10 +12,10 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "strict": true,
-    "baseUrl": ".",
+    "types": ["@testing-library/jest-dom"],
     "paths": {
       "styled-system/*": ["./styled-system/*"]
     }
   },
-  "include": ["app", "vite.config.ts", "panda.config.ts"]
+  "include": ["app", "vite.config.ts", "panda.config.ts", "vitest.config.ts"]
 }
