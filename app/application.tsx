@@ -24,4 +24,4 @@ const App = () => (
   </SiteContainer>
 );
 
-createRoot(document.getElementById('react-root')).render(<App />);
+createRoot(document.getElementById('react-root')!).render(<App />);
