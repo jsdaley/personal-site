@@ -5,14 +5,10 @@
     "node": true,
     "es6": true
   },
-  "parser": "@babel/eslint-parser",
   "parserOptions": {
-    "ecmaVersion": 2017,
+    "ecmaVersion": 2020,
     "ecmaFeatures": {
-      "jsx": true,
-      "templateStrings": true,
-      "classes": true,
-      "modules": true
+      "jsx": true
     },
     "sourceType": "module"
   },
