@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "panda codegen && vite",
+    "build": "panda codegen && vite build",
     "preview": "vite preview",
     "lint": "eslint app/"
   },
@@ -21,14 +21,12 @@
   },
   "homepage": "https://github.com/jsdaley/personal-site#readme",
   "dependencies": {
-    "@emotion/react": "^11.10.5",
-    "@emotion/styled": "^11.10.5",
     "react": "19.2.1",
     "react-dom": "19.2.1"
   },
   "devDependencies": {
-    "@emotion/babel-plugin": "^11.10.5",
     "@eslint/js": "^10.0.1",
+    "@pandacss/dev": "^0.53.0",
     "@vitejs/plugin-react": "^4.0.0",
     "eslint": "10.2.1",
     "@eslint-react/eslint-plugin": "^4.2.3",

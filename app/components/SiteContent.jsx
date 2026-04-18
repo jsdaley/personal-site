@@ -1,23 +1,22 @@
-import {Column} from './Box';
-import styled from '@emotion/styled';
+import { styled } from 'styled-system/jsx';
+import { Column } from './Box';
 import CenterText from './CenterText';
 
-const ContentContainer = styled(Column)`
-  font-size: 72px;
-  width: 100%;
-  padding: 20px;
+const ContentContainer = styled(Column, {
+  base: {
+    fontSize: '72px',
+    width: '100%',
+    padding: '20px',
+    '@media (max-width: 700px)': {
+      justifyContent: 'flex-start',
+    },
+  },
+});
 
-  @media(max-width: 700px) {
-    justify-content: flex-start
-  }
-`;
-
-const SiteContent = (props) => {
-  return (
-    <ContentContainer grow>
-      <CenterText />
-    </ContentContainer>
-  );
-};
+const SiteContent = () => (
+  <ContentContainer flexGrow={1}>
+    <CenterText />
+  </ContentContainer>
+);
 
 export default SiteContent;

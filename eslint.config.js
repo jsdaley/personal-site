@@ -4,7 +4,7 @@ import globals from 'globals';
 
 export default [
   {
-    ignores: ['dist/', 'coverage/'],
+    ignores: ['dist/', 'coverage/', 'styled-system/'],
   },
   js.configs.recommended,
   eslintReact.configs.recommended,

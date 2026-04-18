@@ -1,62 +1,63 @@
-import {Column} from './Box';
-import styled from '@emotion/styled';
+import { styled } from 'styled-system/jsx';
+import { Column } from './Box';
 import Blurb from './Blurb';
 
-const ContentContainer = styled(Column)`
-  width: 100%;
-  max-width: 600px;
-  align-items: flex-start;
+const ContentContainer = styled(Column, {
+  base: {
+    width: '100%',
+    maxWidth: '600px',
+    alignItems: 'flex-start',
+    '@media (max-width: 700px)': {
+      alignItems: 'center',
+    },
+  },
+});
 
-  @media(max-width: 700px) {
-    align-items: center;
-  }
-`;
+const Name = styled('div', {
+  base: {
+    fontSize: '60px',
+    fontFamily: "'Arvo', serif",
+  },
+});
 
-const Name = styled.div`
-  font-size: 60px;
-  font-family: 'Arvo', serif;
-`;
+const Occupation = styled('div', {
+  base: {
+    fontSize: '30px',
+    lineHeight: '30px',
+    marginTop: '5px',
+    marginBottom: '4px',
+    fontFamily: "'Muli', sans-serif",
+    color: '#90DAE6',
+  },
+});
 
-const Occupation = styled.div`
-  font-size: 30px;
-  line-height: 30px;
-  margin-top: 5px;
-  margin-bottom: 4px;
-  font-family: 'Muli', sans-serif;
-  color: #90DAE6;
-`;
-const Role = styled.div`
-  font-size: 20px;
-  font-family: 'Muli', sans-serif;
-`;
+const Role = styled('div', {
+  base: {
+    fontSize: '20px',
+    fontFamily: "'Muli', sans-serif",
+  },
+});
 
-const FirstRole = styled(Role)`
-  color: #A89FEC;
-`;
+const FirstRole = styled(Role, {
+  base: {
+    color: '#A89FEC',
+  },
+});
 
-const SecondRole = styled(Role)`
-  color: #ED6C89;
-`;
+const SecondRole = styled(Role, {
+  base: {
+    color: '#ED6C89',
+  },
+});
 
-
-const StyledBlurb = styled(Blurb)`
-  margin-top: 40px;
-
-  @media(max-width: 700px) {
-    margin-top: 100px;
-  }
-`;
-
-const CenterText = () => {
-  return (
-    <ContentContainer>
-      <Name>Jared Daley</Name>
-      <Occupation>Information Security Officer</Occupation>
-      <FirstRole>Software Engineer</FirstRole>
-      <SecondRole>Senior Engineering Manager and DevOps Team Lead</SecondRole>
-      <StyledBlurb />
-    </ContentContainer>
-  );
-};
+const CenterText = () => (
+  <ContentContainer>
+    <Name>Jared Daley</Name>
+    <Occupation>Information Security Officer</Occupation>
+    <FirstRole>Software Engineer</FirstRole>
+    <SecondRole>Senior Engineering Manager and DevOps Team Lead</SecondRole>
+    <Blurb />
+  </ContentContainer>
+);
 
 export default CenterText;

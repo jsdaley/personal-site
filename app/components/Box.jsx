@@ -1,35 +1,29 @@
-import styled from '@emotion/styled';
+import { styled } from 'styled-system/jsx';
 
-const justifyMap = {
-  start: 'flex-start',
-  end: 'flex-end',
-  'space-between': 'space-between',
-  'space-around': 'space-around'
-};
+export const Box = styled('div', {
+  base: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});
 
-const alignMap = {
-  start: 'flex-start',
-  end: 'flex-end',
-  'space-between': 'space-between',
-  'space-around': 'space-around',
-  stretch: 'stretch'
-};
+export const Row = styled('div', {
+  base: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});
 
-const Box = styled.div`
-  display: flex;
-  flex-direction: ${(props) => props.column ? 'column' : 'row'};
-  justify-content: ${(props) => justifyMap[props.justify] || 'center'};
-  align-items: ${(props) => alignMap[props.align] || 'center' };
-  flex-wrap: ${(props) => props.wrap ? 'wrap' : ' no-wrap'};
-  flex-grow: ${(props) => props.grow ? 1 : 0};
-`;
-
-export const Row = styled(Box)`
-  flex-direction: row;
-`;
-
-export const Column = styled(Box)`
-  flex-direction: column;
-`;
+export const Column = styled('div', {
+  base: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});
 
 export default Box;
