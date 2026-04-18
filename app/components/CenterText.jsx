@@ -1,4 +1,3 @@
-import React from 'react';
 import {Column} from './Box';
 import styled from '@emotion/styled';
 import Blurb from './Blurb';

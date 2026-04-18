@@ -1,5 +1,4 @@
-import React from 'react';
-import {render} from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import styled from '@emotion/styled';
 import { Column } from './components/Box';
 import SiteContent from './components/SiteContent';
@@ -15,15 +14,11 @@ const SiteContainer = styled(Column)`
   right: 0;
 `;
 
-class App extends React.Component {
-  render () {
-    return (
-      <SiteContainer>
-        <SiteContent />
-        <Footer />
-      </SiteContainer>
-    );
-  }
-}
+const App = () => (
+  <SiteContainer>
+    <SiteContent />
+    <Footer />
+  </SiteContainer>
+);
 
-render(<App/>, document.getElementById('react-root'));
+createRoot(document.getElementById('react-root')).render(<App />);
