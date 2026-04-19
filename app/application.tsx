@@ -1,5 +1,6 @@
 import { createRoot } from 'react-dom/client';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { styled } from 'styled-system/jsx';
 import { Column } from './components/Box';
 import SiteContent from './components/SiteContent';
@@ -23,6 +24,7 @@ const App = () => (
     <SiteContent />
     <Footer />
     <Analytics />
+    <SpeedInsights />
   </SiteContainer>
 );
 
