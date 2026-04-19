@@ -1,0 +1,19 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+# If you've found a security issue affecting jareddaley.com,
+# please report it. Thank you.
+
+Contact: mailto:jared@jareddaley.com
+Expires: 2027-04-01T00:00:00.000Z
+Encryption: https://jareddaley.com/pgp.txt
+Preferred-Languages: en
+Canonical: https://jareddaley.com/.well-known/security.txt
+-----BEGIN PGP SIGNATURE-----
+
+iJEEARYKADkWIQTW2/IGrH5kgIdQVc5C+waojoajsgUCaeQkZBsUgAAAAAAEAA5t
+YW51MiwyLjUrMS4xMiwwLDMACgkQQvsGqI6Go7JBygD8CLBUJ00iCiINJybMQ/yh
+HX3rVRQMjsdf/LRtoumuj84A/iMe6+PGReGZNtESiQbIqsMnkUFJGZUJZCcvQdpY
+xcgC
+=NDry
+-----END PGP SIGNATURE-----

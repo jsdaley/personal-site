@@ -2,5 +2,8 @@ node_modules/
 .DS_Store
 coverage/
 dist/
+public/bundle.js
+public/bundle.js.LICENSE.txt
+public/index.html
 styled-system/
 npm-debug.log*
