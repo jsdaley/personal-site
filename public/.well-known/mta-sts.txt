@@ -1,5 +1,5 @@
 version: STSv1
-mode: testing
+mode: enforce
 mx: mx1.privateemail.com
 mx: mx2.privateemail.com
-max_age: 86400
+max_age: 604800
